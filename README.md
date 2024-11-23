@@ -6,8 +6,8 @@ A Node.js REST API service for managing school data with geographical location s
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/school-management-api.git
-cd school-management-api
+git clone https://github.com/pranjalpandey693/school_backend.git
+cd school api
 ```
 
 2. Install dependencies:
