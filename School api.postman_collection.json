@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "8b9c0f7f-611b-4255-8768-b91c660ec4b3",
+		"name": "School api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26933995"
+	},
+	"item": [
+		{
+			"name": "addSchools",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"name\": \"La Martiniere\",\n        \"address\": \"Shakespeare Sarani, Kolkata, West Bengal\",\n        \"latitude\": 22.544813,\n        \"longitude\": 88.351589\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/addSchools",
+					"protocol": "https",
+					"host": [
+						"school-backend-m89l8kd30-pranjalpandey693s-projects",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"addSchools"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addSchools",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Delhi Public School\",\n  \"address\": \"Mathura Road, New Delhi\",\n  \"latitude\": 28.5684,\n  \"longitude\": 77.2431\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/addSchools",
+							"protocol": "https",
+							"host": [
+								"school-backend-m89l8kd30-pranjalpandey693s-projects",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"addSchools"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"message\": \"School added successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "listSchools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5012/api/listSchools",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5012",
+					"path": [
+						"api",
+						"listSchools"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "listSchools",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/listSchools?latitude=13.08268&longitude=80.270721",
+							"protocol": "https",
+							"host": [
+								"school-backend-m89l8kd30-pranjalpandey693s-projects",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"listSchools"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "13.08268"
+								},
+								{
+									"key": "longitude",
+									"value": "80.270721"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 7,\n        \"name\": \"Chennai Public School\",\n        \"address\": \"Anna Nagar, Chennai, Tamil Nad\",\n        \"latitude\": 13.08268,\n        \"longitude\": 80.270721,\n        \"distance\": 0\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Trivandrum International Schoo\",\n        \"address\": \"Trivandrum, Kerala\",\n        \"latitude\": 8.524139,\n        \"longitude\": 76.936638,\n        \"distance\": 624.0747505088303\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Bombay Scottish School\",\n        \"address\": \"Mahim, Mumbai, Maharashtra\",\n        \"latitude\": 19.07609,\n        \"longitude\": 72.877426,\n        \"distance\": 1033.1303501140874\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Mayo College\",\n        \"address\": \"Alwar Gate, Ajmer, Rajasthan\",\n        \"latitude\": 26.449923,\n        \"longitude\": 74.639915,\n        \"distance\": 1598.2054033975946\n    },\n    {\n        \"id\": 2,\n        \"name\": \"DAV Public School\",\n        \"address\": \"Sector 8C, Chandigarh, Punjab\",\n        \"latitude\": 30.733315,\n        \"longitude\": 76.779419,\n        \"distance\": 1995.05209657048\n    },\n    {\n        \"id\": 3,\n        \"name\": \"DAV Public School\",\n        \"address\": \"Sector 8C, Chandigarh, Punjab\",\n        \"latitude\": 30.733315,\n        \"longitude\": 76.779419,\n        \"distance\": 1995.05209657048\n    },\n    {\n        \"id\": 4,\n        \"name\": \"DAV Public School\",\n        \"address\": \"Sector 8C, Chandigarh, Punjab\",\n        \"latitude\": 30.733315,\n        \"longitude\": 76.779419,\n        \"distance\": 1995.05209657048\n    }\n]"
+				}
+			]
+		}
+	]
+}
