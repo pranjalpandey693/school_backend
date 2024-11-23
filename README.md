@@ -30,7 +30,7 @@ DB_NAME=school_management
 ### 1. Add School
 Adds a new school to the database.
 
-**Endpoint:** `POST /api/addSchools`
+**Endpoint:** `POST https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/addSchools`
 
 **Request Body:**
 ```json
@@ -54,7 +54,7 @@ Adds a new school to the database.
 ### 2. List Schools
 Retrieves schools sorted by distance from provided coordinates.
 
-**Endpoint:** `GET /api/listSchools`
+**Endpoint:** `GET https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/listSchools`
 
 **Query Parameters:**
 - `latitude` (required): User's latitude
@@ -62,7 +62,7 @@ Retrieves schools sorted by distance from provided coordinates.
 
 **Example Request:**
 ```
-GET /api/listSchools?latitude=51.5074&longitude=-0.1278
+GET https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/listSchools?latitude=13.08268&longitude=80.270721
 ```
 
 **Response (201 OK):**
