@@ -85,8 +85,8 @@ GET https://school-backend-m89l8kd30-pranjalpandey693s-projects.vercel.app/api/l
  ### For testing
  Accessing the Exported Collection
 
- **In Postman (Import the Collection)**
- **1.Open Postman.**
- **2.Click on the Import button in the top-left corner.**
- **3.Drag and drop the exported .json file into the import window or click Upload Files to browse for it.**
- **4.The collection will be added to your Postman workspace, ready for testing.**
+ **In Postman (Import the Collection)**<br><br>
+ **1.Open Postman.**<br>
+ **2.Click on the Import button in the top-left corner.**<br>
+ **3.Drag and drop the exported .json file into the import window or click Upload Files to browse for it.**<br>
+ **4.The collection will be added to your Postman workspace, ready for testing.**<br>
